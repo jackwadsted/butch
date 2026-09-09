@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Brilliant Unix Time Conversion Helper</h2>
+
+    <div id="selection-section" class="hidden">
+      <div class="section-label">Selected text</div>
+      <div id="selected-value" class="mono-value"></div>
+      <div id="converted-selection" class="result-value"></div>
+      <button id="copy-selection" class="copy-btn">Copy</button>
+      <div class="divider"></div>
+    </div>
+
+    <div class="section-label">Enter a timestamp</div>
+    <input id="manual-input" type="text" placeholder="e.g. 1700000000" autocomplete="off" spellcheck="false">
+    <div id="converted-manual" class="result-value"></div>
+    <button id="copy-manual" class="copy-btn hidden">Copy</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
